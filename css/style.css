@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Righteous', cursive;
+    background: radial-gradient(
+    circle closest-corner at center 125px,
+    #222,
+    black 40%
+  ) no-repeat;
+}
+
+.scene, canvas {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 100vh;
+}
+
+.text {
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 10vw;
+    font-weight: bold;
+}
